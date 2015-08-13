@@ -7,6 +7,3 @@ class Item(models.Model):
 	color = models.CharField(max_length = 20)
 	created_on = models.DateTimeField(auto_now_add = True)
 	wardrobe = models.ManyToManyField(Wardrobe)
-	
-	def __str__(self):
-		return self.color + self.wardrobe + self.created_on

@@ -10,5 +10,3 @@ class ItemHistory(models.Model):
 	class Meta:
 		unique_together = ('item','date_on')
 
-	def __str__(self):
-		return self.item + self.date_on
